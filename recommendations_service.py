@@ -9,7 +9,7 @@ OFFLINE_PATH = "recommendationsPERSONAL.parquet"
 ONLINE_PATH = "events.parquet"
 
 if not os.path.exists(OFFLINE_PATH) or not os.path.exists(ONLINE_PATH):
-    raise RuntimeError("❌ Не найдены файлы recommendationsPERSONAL.parquet или events.parquet")
+    raise RuntimeError("Не найдены файлы recommendationsPERSONAL.parquet или events.parquet")
 
 offline_df = pd.read_parquet(OFFLINE_PATH)
 online_df = pd.read_parquet(ONLINE_PATH)

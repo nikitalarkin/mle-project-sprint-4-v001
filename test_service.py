@@ -10,7 +10,7 @@ def wait_for_server(url, timeout=15):
         try:
             r = requests.get(url, params={"user_id": 0})
             if r.status_code in (200, 422):
-                print("✅ Сервер запущен")
+                print("Сервер запущен")
                 return True
         except requests.exceptions.ConnectionError:
             time.sleep(1)
