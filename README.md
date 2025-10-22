@@ -70,3 +70,7 @@ jupyter lab --ip=0.0.0.0 --no-browser
 Код для тестирования сервиса находится в файле `test_service.py`.
 
 <*укажите здесь необходимые шаги для тестирования сервиса рекомендаций*>
+
+git clone https://github.com/nikitalarkin/mle-project-sprint-4-v001
+cd mle-project-sprint-4-v001
+pip install -r requirements.txt 
